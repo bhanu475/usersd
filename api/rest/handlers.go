@@ -32,6 +32,7 @@ func NewUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// data will be in formet of json serilized os "{"email":emampl.domain.com}"
 	// Create user
 	user := &usersd.User{Email: string(data)}
 
